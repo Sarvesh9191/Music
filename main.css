@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #0a183d;
+}
+.main-header .navbar {
+  padding: 2.5rem 0;
+}
+.main-header .navbar-toggler i {
+  color: #fff;
+  font-size: 20px;
+}
+.main-header .navbar-brand {
+  color: #fff;
+  -webkit-animation: music 1s linear infinite;
+          animation: music 1s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.main-header .navbar-brand .fas {
+  font-size: 4rem;
+}
+@-webkit-keyframes music {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes music {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.main-header .navbar-brand:hover {
+  filter: drop-shadow(0 1.5rem 1rem rgba(255, 255, 255, 0.5));
+}
+.main-header .navbar-nav {
+  padding-left: 15rem;
+}
+.main-header .navbar-nav .nav-item .nav-link {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-right: 3rem;
+}
+.main-header .navbar-nav .nav-item:last-child > .nav-link {
+  padding-right: 0%;
+}
+.main-header .nav-item:hover > .nav-link, .main-header .navbar-brand:hover, .main-header .navbar-brand:hover > .fas {
+  color: #b71540;
+}
+.main-header .my_btn {
+  padding: 0.8rem 3.2rem;
+  background: #b71540;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.main-header .my_btn:hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header_hero {
+  width: 100%;
+  background: #0a183d;
+}
+.header_hero_text {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header_hero_text h2 {
+  color: #fff;
+  font-size: 7rem;
+  margin-bottom: 3rem;
+  line-height: 150%;
+  font-weight: 600;
+}
+.header_hero_text h2 span {
+  color: #b71540;
+  text-transform: capitalize;
+}
+.header_hero_text p {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+.header_hero_text .header_text_btn {
+  display: flex;
+}
+.header_hero_text .header_text_btn .my_btn {
+  padding: 0.8rem 3.2rem;
+  background: #b71540;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  border: none;
+  box-shadow: 0rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 4.5rem;
+  outline: none;
+}
+.header_hero_text .header_text_btn .my_btn:hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+.header_hero_text #btn-2 {
+  margin-left: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.header_hero_text #btn-2:hover {
+  background-color: #fff;
+  box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  color: #0a183d;
+  transform: translateY(-0.7rem);
+}
+.header_hero__img {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  -webkit-animation: anime_hero 10s linear infinite alternate;
+          animation: anime_hero 10s linear infinite alternate;
+}
+@-webkit-keyframes anime_hero {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes anime_hero {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.header_hero__img img {
+  filter: drop-shadow(0 1.5rem 1rem rgba(0, 0, 0, 0.8));
+}
+
+@media (max-width: 991px) {
+  .main-header .navbar-nav {
+    padding-left: 0;
+  }
+  .main-header .navbar-nav .nav-item .nav-link {
+    border-bottom: 1px solid #fff;
+    padding: 1rem 0;
+  }
+  .main-header .my_btn {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .header_hero_text .header_text_btn {
+    width: 100%;
+  }
+  .header_hero_text .header_text_btn a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .header_hero_text .header_text_btn #btn-2 {
+    margin-left: 0;
+  }
+  .header_hero_text h2 {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */
